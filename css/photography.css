@@ -1,0 +1,77 @@
+
+/* Styles from the stylesheet */
+body {
+    font-family: 'Arial, sans-serif'; /* Example font family */
+    background-color: lightblue; /* Example background color */
+    color: #333; /* Example font color */
+}
+
+h1 {
+    text-align: center;
+}
+
+.anchor-section {
+    margin: 20px 0;
+}
+
+.video-section {
+    margin: 20px 0;
+}
+
+.image-section {
+    margin: 20px 0;
+}
+
+.image {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin: 10px 0;
+}
+
+.list-section {
+    margin: 20px 0;
+}
+
+.unordered-list {
+    list-style-type: disc; /* Custom bullet style */
+    margin-left: 20px;
+}
+
+.numbered-list {
+    list-style-type: decimal; /* Custom numbering style */
+    margin-left: 20px;
+}
+
+.div1 {
+    background-color: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.div2 {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.div3 {
+    background-color: #bbb;
+    padding: 10px;
+    margin: 10px 0;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+}
+li{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; font-size: larger;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

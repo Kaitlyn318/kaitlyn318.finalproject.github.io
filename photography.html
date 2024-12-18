@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Business</title>
+    <link rel="stylesheet" href="css/photography.css"
+    <script src="script.js">
+  
+</head>
+<body>
+   
+    <header>
+    <h1> My Favorite Hobby: Photography </h1>
+       
+        
+    </header>
+
+    <section class="anchor-section">
+       
+        <section
+    <div class="photo-container">>
+           <center>
+            <h2>Gallery</h2>
+        </center>
+            <Center>
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczPnwjdPMcWnZHgSms6A3SlA38d5QsIiakSTKGHtg5ME-injH1JCAeg3BBQrH_nOFDnVkqwmmq74s5FS3hRH3EHIpoQb8Gifbk1pSct2PEh3Z1LFVtD85PtX_Lfc2nYRV49zMdQT9TTA4bhT3pp8UBSGXA=w2048-h1365-s-no-gm?authuser=0" alt="garden photos" class="image" width="45%" pading="20px"> 
+        </Center>
+            <Center>
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczPHOXqEXzmA_MRTQ7iGqDWz-etxlARAkHk6LyAD6jnXgNhOB0-Udo-rflNhBf0g7LEFzFHZJ2u17KOq08XVBVHlnL0HM9UOffAbP9QuuwVd2Mh9Z7pIf1_847YTIfidTwj2MOeETqTqk-6Pw_NTSQoqog=w1262-h1894-s-no-gm?authuser=0" alt="El" class="image" width=45%
+        </Center>
+        <Center>
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczOV3wA7JJQLY_55yOB7leWXCc5wzazgfXcbYBhd9gHbFNHXGxmqPzs64AXz1z-ZwebHRbBh-aK8f3FkzjRwcK7SXWzQfJJBPCk8966W1LusryZSlhE2OBhaBohuG6junRshT6oUtPoDwhv7muI6128sWA=w1262-h1894-s-no-gm?authuser=0" alt="Kim and Joe" class="image" width="45%" pading="20px"> 
+        </Center>
+    </section>
+</div>
+    <section class="video-section">
+        <Center>
+        <h2>Why I love being behind the lens</h2>
+        <Center>
+       
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/59A9U3yIJEI?si=CukaECZ7xalQI3Kk" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen
+        ></iframe>
+    </section>
+
+
+    </section>
+    
+<p>
+ Types of Photoshoots 
+</p>
+    <ul>
+        <li>Couples Shoots
+            <ol>
+                <li>Engagements</li>
+                <li>Wedding Annoucement</li>
+                <li>Bridals</li>
+            </ol>
+        </li>
+        <li>Personal
+            <ol>
+                <li>Portraits</li>
+                <li>Headshots</li>
+            </ol>
+        </li>
+        <li>Group Photos</li>
+            <ol>
+                <li>Families</li>
+                <Li>School Dance Photos</Li>
+                <Li>Friends</Li>
+                <li>Family</li>
+            </ol>
+    </ul>
+    
+    </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <style>
+        /* Scoped styles for Wordle game */
+        #wordle-container {
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .wordle-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        .wordle-tile {
+            width: 40px;
+            height: 40px;
+            margin: 2px;
+            border: 1px solid #ccc;
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+            background-color: #fff;
+        }
+
+        .correct {
+            background-color: #6aaa64;
+            color: #fff;
+        }
+
+        .present {
+            background-color: #c9b458;
+            color: #fff;
+        }
+
+        .absent {
+            background-color: #787c7e;
+            color: #fff;
+        }
+
+        #wordle-keyboard {
+            margin-top: 10px;
+        }
+
+        .key {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            font-size: 14px;
+            background-color: #ddd;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .key.disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wordle-container">
+    <h2>Wordle Game</h2>
+    <div id="wordle-board"></div>
+    <div id="wordle-keyboard"></div>
+    <div id="message"></div>
+</div>
+
+<script>
+    // Wordle Game Implementation
+    const wordleContainer = document.getElementById('wordle-container');
+    const board = document.getElementById('wordle-board');
+    const keyboard = document.getElementById('wordle-keyboard');
+    const messageDiv = document.getElementById('message');
+
+    const solution = "photo"; // You can randomize this from a word list
+    const maxGuesses = 6;
+    let currentRow = 0;
+    let currentGuess = "";
+
+    const initializeBoard = () => {
+        for (let i = 0; i < maxGuesses; i++) {
+            const row = document.createElement('div');
+            row.classList.add('wordle-row');
+            for (let j = 0; j < solution.length; j++) {
+                const tile = document.createElement('div');
+                tile.classList.add('wordle-tile');
+                row.appendChild(tile);
+            }
+            board.appendChild(row);
+        }
+    };
+
+    const initializeKeyboard = () => {
+        const keys = 'abcdefghijklmnopqrstuvwxyz'.split('');
+        keys.forEach(key => {
+            const keyDiv = document.createElement('div');
+            keyDiv.classList.add('key');
+            keyDiv.textContent = key;
+            keyDiv.onclick = () => handleKeyPress(key);
+            keyboard.appendChild(keyDiv);
+        });
+        const enterKey = document.createElement('div');
+        enterKey.classList.add('key');
+        enterKey.textContent = 'Enter';
+        enterKey.onclick = handleEnterPress;
+        keyboard.appendChild(enterKey);
+
+        const deleteKey = document.createElement('div');
+        deleteKey.classList.add('key');
+        deleteKey.textContent = 'Del';
+        deleteKey.onclick = handleDeletePress;
+        keyboard.appendChild(deleteKey);
+    };
+
+    const handleKeyPress = (key) => {
+        if (currentGuess.length < solution.length && currentRow < maxGuesses) {
+            currentGuess += key;
+            updateRow();
+        }
+    };
+
+    const handleEnterPress = () => {
+        if (currentGuess.length === solution.length) {
+            checkGuess();
+        } else {
+            showMessage('Not enough letters!');
+        }
+    };
+
+    const handleDeletePress = () => {
+        currentGuess = currentGuess.slice(0, -1);
+        updateRow();
+    };
+
+    const updateRow = () => {
+        const row = board.children[currentRow];
+        Array.from(row.children).forEach((tile, index) => {
+            tile.textContent = currentGuess[index] || '';
+        });
+    };
+
+    const checkGuess = () => {
+        const row = board.children[currentRow];
+        let guessStatus = Array(solution.length).fill('absent');
+
+        // Mark correct letters first
+        const solutionArr = solution.split('');
+        currentGuess.split('').forEach((char, index) => {
+            if (char === solutionArr[index]) {
+                guessStatus[index] = 'correct';
+                solutionArr[index] = null;
+            }
+        });
+
+        // Mark present letters
+        currentGuess.split('').forEach((char, index) => {
+            if (guessStatus[index] !== 'correct' && solutionArr.includes(char)) {
+                guessStatus[index] = 'present';
+                solutionArr[solutionArr.indexOf(char)] = null;
+            }
+        });
+
+        // Update row colors
+        Array.from(row.children).forEach((tile, index) => {
+            tile.classList.add(guessStatus[index]);
+        });
+
+        if (currentGuess === solution) {
+            showMessage('You guessed it!');
+            disableKeyboard();
+        } else if (currentRow === maxGuesses - 1) {
+            showMessage(`Game Over! The word was "${solution}"`);
+            disableKeyboard();
+        } else {
+            currentRow++;
+            currentGuess = '';
+        }
+    };
+
+    const showMessage = (msg) => {
+        messageDiv.textContent = msg;
+    };
+
+    const disableKeyboard = () => {
+        Array.from(keyboard.children).forEach(key => {
+            key.classList.add('disabled');
+            key.onclick = null;
+        });
+    };
+
+    // Initialize the game
+    initializeBoard();
+    initializeKeyboard();
+</script>
+
+</body>
+</html>
+<center>
+<div class='tableauPlaceholder' id='viz1734500748339' style='position: relative'><noscript>
+    <a href='#'>
+    <img alt='WHAT U.S. COUNTIES HAVE THE OLDEST POPULATIONS? ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B2&#47;B224RTS6R&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;B224RTS6R' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;B2&#47;B224RTS6R&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1734500748339');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1577px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';               
+     vizElement.parentNode.insertBefore(scriptElement, vizElement);        
+             </script>
+</center>
+    <footer>
+        <!-- <h2>Contact Me</h2>
+        <p>Email: contact@myphotographybusiness.com</p>
+        <p>Phone: (801) 888-8888/p> -->
+    </footer>
+    <a href="#Top">Back to Top</a>
+</body>
+</html>
+
